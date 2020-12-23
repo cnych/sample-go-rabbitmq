@@ -7,9 +7,9 @@ spec:
     spec:
       containers:
       - name: rabbitmq-client
-        image: jeffhollan/rabbitmq-client:dev
+        image: cnych/keda-rabbitmq-client:dev
         imagePullPolicy: Always
-        command: ["send",  "amqp://user:PASSWORD@rabbitmq.default.svc.cluster.local:5672", "300"]
+        command: ["send", "amqp://user:PASSWORD@rabbitmq.default.svc.cluster.local:5672", "300"]
       restartPolicy: Never
   backoffLimit: 4
 

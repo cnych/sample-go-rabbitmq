@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: rabbitmq-consumer
-          image: jeffhollan/rabbitmq-client:dev
+          image: cnych/keda-rabbitmq-client:dev
           imagePullPolicy: Always
           command:
             - receive
